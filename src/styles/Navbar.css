@@ -1,0 +1,118 @@
+
+.navbar {
+    background-color: #ff6347;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 8vh;
+    font-family: 'PokemonFontSolid', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 40px;
+    padding: 5px;
+    color: white;
+      
+}
+
+.nav_a {
+    text-decoration: none; 
+    color: #f9dbd6; 
+    font-weight: bold; 
+    font-size: 30px;
+    display: inline-block; /* makes transforms possible*/
+    transition: transform 0.2s ease, color 0.2s ease; 
+  }
+  
+  .nav_a:hover {
+    cursor: pointer;
+    color: #f9dbd6; 
+    transform: scale(1.1); 
+  }
+  
+  .nav_a:visited {
+    color: #f6cac2; 
+  }
+  
+  .nav_a:active {
+    /* transform: scale(0.95);  */
+    color: #f9dbd6; 
+  }
+  
+
+
+
+@media (min-width: 1024px) {
+    nav {
+        height: 10vh;  
+    }
+
+    ul {
+        gap: 50px;  
+    }
+
+    a {
+        font-size: 1.5rem;  
+        padding: 10px 15px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        height: 25vh;  /* Make navbar taller for easier navigation */
+    }
+
+    ul {
+        flex-direction: column;  /* Stack items vertically */
+        align-items: center;  /* Center items horizontally */
+        gap: 15px;  
+    }
+
+    a {
+        font-size: 1.1rem;  
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+    nav {
+        height: 25vh;  
+    }
+
+    ul {
+        gap: 10px;  
+    }
+
+    a {
+        font-size: 1rem; 
+    }
+}
+
+
+@media (max-width: 320px) {
+    nav {
+        width: 320px;
+        height: 25vh;  
+    }
+
+    ul {
+        gap: 8px;  
+        padding: 0;  
+    }
+
+    a {
+        font-size: 0.9rem;  
+    }
+}

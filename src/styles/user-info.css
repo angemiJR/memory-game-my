@@ -1,0 +1,74 @@
+.ui__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(110deg, 
+    #FFFFFF    0%, #FFFFFF  40%, 
+    #bd2a37   0%, #bd2a37 45%,        
+    #de3343 0%);
+}
+
+.fave-pkm__banner {
+    height: 8vh;
+    width: 100vw;
+    background: linear-gradient(125deg,#ffffff00 0%, #ffffff00 7%,
+     #000000 0%, #000000 90%);
+     margin: 4vh;
+}
+.fave-pkm__container {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 10%;
+}
+.fave-pkm__container > h3 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin: 0;
+    padding: 1% 3%;
+}
+
+.info__container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 80vh;
+    width: 100vw;
+}
+.info__container > img, .info__container > div{
+    max-width: 400px;
+    width: 100%;
+}
+.info__container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.user-info, .game-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 1rem 0;
+}
+.user-info {
+    justify-content: start;
+}
+.user-info {
+    border-radius: 7px;
+    background: linear-gradient(90deg,
+    #dbdcd7 0%,  #dbdcd7 40%,
+    #FFFFFF 0%,  #FFFFFF 60%);
+    margin: 2vh 0;
+
+}
+.game-info{
+    border-radius: 50px;
+}
+.info__container p, .info__container h4 {
+    font-size: 2rem;
+    margin: 0 2.3rem;
+}

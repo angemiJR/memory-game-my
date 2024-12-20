@@ -1,0 +1,71 @@
+.login__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient( 
+        180deg,
+        #8b1e27 5%,
+        #ff4151 30%,
+        #ff4151 45%,
+        #000 45%,
+        #000 55%,
+        #fff 55%,
+        #fff 95%,
+        #d0d0d0 100%);
+}
+.login__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 77vh;
+    height: 77vh;
+    background-image: radial-gradient(
+    #ffffff,
+    #d0d0d0);
+    border-radius: 50%;
+    border: #000 8vh solid;
+    padding-bottom: 3vh;
+}
+.login__form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login__form label {
+    font-family: 'PokemonFontSolid', Arial, sans-serif;
+    color: #b07901;
+    font-size: 2.2rem;
+}
+.login__form input {
+    width: 42vh;
+    height: 6vh;
+    border: #000 solid;
+    border-radius: 2vh;
+    padding: 0px 10px;
+    font-family: 'Pokemon', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.login__form input:focus {
+    border: #bd2a37 solid 5px;
+}
+.login__form button {
+    font-family: 'Pokemon', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    border: #000 solid 1vh;
+    border-radius: 10px;
+    background-image:linear-gradient(#906303, #fcbc32,
+    #906303);
+    padding: 2vh 3vh;
+    margin: 2vh;
+}
+.login__form button:hover {
+    cursor: pointer;
+    color: #fff;
+    background-image:linear-gradient(#8b1e27, #ff3444,
+    #8b1e27);
+}
