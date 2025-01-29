@@ -26,26 +26,26 @@ ul {
 
 .nav_a {
     text-decoration: none; 
-    color: #f9dbd6; 
+    color: #ffffff; 
     font-weight: bold; 
-    font-size: 30px;
+    font-size: 3em;
     display: inline-block; /* makes transforms possible*/
     transition: transform 0.2s ease, color 0.2s ease; 
   }
   
   .nav_a:hover {
     cursor: pointer;
-    color: #f9dbd6; 
+    color: #ffffff; 
     transform: scale(1.1); 
   }
   
   .nav_a:visited {
-    color: #f6cac2; 
+    color: #ffffff; 
   }
   
   .nav_a:active {
     /* transform: scale(0.95);  */
-    color: #f9dbd6; 
+    color: #ffffff; 
   }
   
 

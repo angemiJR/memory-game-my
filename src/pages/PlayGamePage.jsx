@@ -15,7 +15,7 @@ const PlayGamePage = () => {
       <div className="play-game-page">
         <div className="pokemon-theme">
           
-          <h1>Welcome to the Pokémon Memory Game!</h1>
+          <h1>Welcome to the Corgi Memory Game!</h1>
           
           {/* Play Game button */}
           <button className="start-button" onClick={handlePlayGame}>
