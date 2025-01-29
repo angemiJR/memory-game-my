@@ -4,16 +4,11 @@
     justify-content: center;
     width: 100vw;
     height: 90vh;
-    background: linear-gradient( 
-        180deg,
-        #8b1e27 5%,
-        #ff4151 30%,
-        #ff4151 45%,
-        #000 45%,
-        #000 55%,
-        #fff 55%,
-        #fff 95%,
-        #d0d0d0 100%);
+    background-image: url('../assets/paws.jpg');
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin: 0;
 }
 .login__form {
     display: flex;
@@ -25,9 +20,9 @@
     background-image: radial-gradient(
     #ffffff,
     #d0d0d0);
-    border-radius: 50%;
-    border: #000 8vh solid;
-    padding-bottom: 3vh;
+    border-radius: 2%;
+    border: #7c7c7c 2px solid;
+    /* padding-bottom: 3vh; */
 }
 .login__form > div {
     display: flex;
