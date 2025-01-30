@@ -15,8 +15,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 77vh;
-    height: 77vh;
+    width: 40vw;
+    height: 50vh;
     background-image: radial-gradient(
     #ffffff,
     #d0d0d0);
@@ -31,13 +31,17 @@
 }
 .login__form label {
     font-family: 'PokemonFontSolid', Arial, sans-serif;
-    color: #b07901;
-    font-size: 2.2rem;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 2px rgba(70, 0, 0, 0.155);
 }
 .login__form input {
     width: 42vh;
     height: 6vh;
-    border: #000 solid;
+    /* border: #000 solid; */
     border-radius: 2vh;
     padding: 0px 10px;
     font-family: 'Pokemon', sans-serif;
@@ -45,22 +49,40 @@
     text-align: center;
 }
 .login__form input:focus {
-    border: #bd2a37 solid 5px;
+    color: antiquewhite;
 }
 .login__form button {
-    font-family: 'Pokemon', sans-serif;
-    font-size: 2rem;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #ff6347;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px;
+    padding: 15px 15px;
+    font-family: 'PokemonFontSolid', Arial, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 2px rgba(70, 0, 0, 0.155);
+    /* font-family: 'Pokemon', sans-serif;
+    font-size: 2em;
     font-weight: 900;
-    border: #000 solid 1vh;
+    border: #777777 solid 2px;
     border-radius: 10px;
     background-image:linear-gradient(#906303, #fcbc32,
     #906303);
     padding: 2vh 3vh;
-    margin: 2vh;
+    margin: 2vh; */
 }
 .login__form button:hover {
     cursor: pointer;
     color: #fff;
-    background-image:linear-gradient(#8b1e27, #ff3444,
-    #8b1e27);
+    background-image:linear-gradient(#ff8d79, #ff6347,
+    #cf3642);
 }

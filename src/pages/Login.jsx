@@ -58,7 +58,7 @@ const handleLoginClick = (e) => {
                     value={credentials.password}
                     onChange={handleChange}/>
                 </div>
-                <button onClick={handleLoginClick}>LOG IN</button>
+                <button onClick={handleLoginClick}>Let's Go</button>
             </div>
         </form>
     </div>
