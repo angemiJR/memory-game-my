@@ -12,11 +12,31 @@ function Game() {
     const [score, setScore] = useState(0); // Game score
     const [mistakes, setMistakes] = useState(0); // Tracks number of mistakes
     const [isGameOver, setIsGameOver] = useState(false); // Game over state
+    const [time, setTime] = useState(0); // Timer state
+    const [successMessage, setSuccessMessage] = useState(""); // Success message state
 
     // Fetch data from specific image list and initialize cards
     useEffect(() => {
         fetchCardData();
     }, []);
+
+    // Timer effect
+    useEffect(() => {
+        if (isGameOver) return;
+
+        const timer = setInterval(() => {
+            setTime((prevTime) => prevTime + 1);
+        }, 1000);
+
+        return () => clearInterval(timer); // Cleanup on component unmount or when game ends
+    }, [isGameOver]);
+
+    // Format time as MM:SS
+    const formatTime = (seconds) => {
+        const minutes = Math.floor(seconds / 60);
+        const secs = seconds % 60;
+        return `${String(minutes).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+    };
 
     // Fetch specific card data
     const fetchCardData = async () => {
@@ -29,11 +49,10 @@ function Game() {
                 { id: 4, content: "https://images.pexels.com/photos/4445620/pexels-photo-4445620.jpeg" },
                 { id: 5, content: "https://images.pexels.com/photos/4445615/pexels-photo-4445615.jpeg" },
                 { id: 6, content: "https://images.pexels.com/photos/4445624/pexels-photo-4445624.jpeg" },
-                { id: 7, content: "https://images.pexels.com/photos/14576467/pexels-photo-14576467.jpeg" },
-                { id: 8, content: "https://images.pexels.com/photos/14576471/pexels-photo-14576471.jpeg" },
-                { id: 9, content: "https://images.pexels.com/photos/4641868/pexels-photo-4641868.jpeg" },        
+                { id: 7, content: "https://images.pexels.com/photos/10922896/pexels-photo-10922896.jpeg" },
+                { id: 8, content: "https://images.pexels.com/photos/4772940/pexels-photo-4772940.jpeg" },
+                { id: 9, content: "https://images.pexels.com/photos/4641868/pexels-photo-4641868.jpeg" },
             ];
-            
 
             // Duplicate and shuffle cards
             const shuffledCards = shuffleArray(
@@ -71,7 +90,17 @@ function Game() {
         const [firstCard, secondCard] = cards;
 
         if (firstCard.id === secondCard.id) {
-            setMatchedCards((prev) => [...prev, firstCard.id]);
+            setMatchedCards((prev) => {
+                const updatedMatches = [...prev, firstCard.id];
+
+                // Check if all cards are matched
+                if (updatedMatches.length === cardData.length / 2) {
+                    setIsGameOver(true);
+                    setSuccessMessage(`Great job! Your time is ${formatTime(time)}. Can you beat that?`);
+                }
+
+                return updatedMatches;
+            });
             setScore((prev) => prev + 1);
         } else {
             setMistakes((prev) => {
@@ -99,6 +128,8 @@ function Game() {
         setScore(0);
         setMistakes(0);
         setIsGameOver(false);
+        setTime(0); // Reset time
+        setSuccessMessage(""); // Reset success message
         fetchCardData();
     };
 
@@ -110,10 +141,16 @@ function Game() {
                 </Link>
                 <Score score={score} />
                 <h2>Mistakes: {mistakes} / 15</h2>
+                <h2>Time: {formatTime(time)}</h2>
                 <button onClick={resetGame}>Reset game</button>
             </div>
 
-            {isGameOver ? (
+            {isGameOver && matchedCards.length === cardData.length / 2 ? (
+                <div className="success_message">
+                    <h2>{successMessage}</h2>
+                    <button onClick={resetGame} className="play_again_btn">Play Again</button>
+                </div>
+            ) : isGameOver ? (
                 <div className="game_over">
                     <GameOver />
                 </div>

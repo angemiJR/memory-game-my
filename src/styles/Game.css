@@ -47,7 +47,8 @@ h2 {
 }
 
 .header button,
-.back_btn button {
+.back_btn button,
+.play_again_btn {
     text-align: center;
     background-color: #ff6347;
     border: none;
@@ -66,12 +67,16 @@ h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     -webkit-text-stroke: 2px rgba(70, 0, 0, 0.155);
 }
+.play_again_btn {
+    margin-top: 30px;
+}
 
 .header button:hover {
     transform: scale(1.05);
 }
 
-.game_over {
+.game_over,
+.success_message {
     display: flex;
     flex-direction: column;
     justify-content: center;
