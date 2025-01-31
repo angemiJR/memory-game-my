@@ -10,6 +10,62 @@
     background-repeat: no-repeat; 
     margin: 0;
 }
+
+
+.text {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 4vw;
+
+        .corgi {
+            width: 25vw;
+            height: auto;
+            rotate: -5deg;
+            z-index: 1;
+            align-self: self-start;
+        }
+
+        .cloud_container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+            margin-top: 20px;
+
+            h2 {
+                font-family: 'PokemonFontSolid', Arial, sans-serif;
+                font-size: 3em;
+                color: #ff6347;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                -webkit-text-stroke: 2px rgba(70, 0, 0, 0.155);
+                align-self: flex-end;
+                z-index: 2;
+                position: absolute;
+                margin-top: 60px;
+                align-self: flex-start;
+                margin-left: 20px;
+            }
+
+            .cloud {
+                width: 20vw;
+                height: auto;
+                z-index: 1;
+                align-self: self-end;
+    
+            }
+        }
+    }
+}
+
 .login__form {
     display: flex;
     flex-direction: column;
