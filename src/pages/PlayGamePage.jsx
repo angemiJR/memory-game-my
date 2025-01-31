@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/PlayGamePage.css'; // Import the CSS for Pokémon theme
+import Corgi from"../assets/kuce.png";
 
 
 const PlayGamePage = () => {
@@ -13,6 +14,10 @@ const PlayGamePage = () => {
   
     return (
       <div className="play-game-page">
+        <div className="box">
+        <div className='corgi'>
+          <img src={Corgi} alt="" />
+        </div>
         <div className="pokemon-theme">
           
           <h1>Welcome to the Corgi Memory Game!</h1>
@@ -21,6 +26,7 @@ const PlayGamePage = () => {
           <button className="start-button" onClick={handlePlayGame}>
             Play Game
           </button>
+        </div>
         </div>
       </div>
     );

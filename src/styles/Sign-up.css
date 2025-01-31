@@ -4,79 +4,83 @@
     justify-content: center;
     width: 100vw;
     height: 90vh;
-    background: linear-gradient(180deg,
-            #003892 5%,
-            #2f6bcc 30%,
-            #2f6bcc 45%,
-            #000 45%,
-            #000 55%,
-            #fff 55%,
-            #fff 95%,
-            #d0d0d0 100%);
+    background-image: url('../assets/paws.jpg');
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin: 0;
 }
-.signup__body_marking {
-    align-self: flex-start;
-    width: 20vh;
-        --p: 30%; /* control the shape (can be percentage) */
-        height: 20vh;
-        aspect-ratio: 3/2;
-        clip-path: polygon(var(--p) 100%,calc(100% - var(--p)) 100%,100% 0,0 0);
-        background: linear-gradient(#8b1e27, #ff2336) ;
-        transform: skew(30deg);
-}
-.marking-R {
-    transform: skew(-30deg);
-}
+
+
 .signup__form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 77vh;
-    height: 77vh;
-    background-image: radial-gradient(#ffffff,
-            #d0d0d0);
-    border-radius: 50%;
-    border: #000 8vh solid;
-    padding-bottom: 3vh;
+    width: 40vw;
+    height: 45vh;
+    background-image: radial-gradient(
+    #ffffff,
+    #d0d0d0);
+    border-radius: 2%;
+    box-shadow: 8px 8px 6px #cacaca;
 }
 .signup__form>div {
+    height: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
+
 .signup__form label {
-    font-family: 'PokemonFontSolid', sans-serif;
-    font-size: 2.2rem;
-    color: #b37a00;
+    font-family: 'PokemonFontSolid', Arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 2px rgba(70, 0, 0, 0.155);
+    margin-bottom: -15px;
 }
 .signup__form input {
     width: 42vh;
     height: 6vh;
-    border: #000 solid;
-    border-radius: 2vh;
-    padding: 0px 10px;
-    font-family: 'Pokemon', sans-serif;
+    border:none;
+    border-radius: 20px;
+    font-family: 'PokemonFontSolid', Arial, sans-serif;
     font-size: 1.5rem;
     text-align: center;
+    color:#ff6347;
 }
+
 .signup__form input:focus {
-    border: #bd2a37 solid 5px;
+    color: #ff6347;
 }
+
 .signup__form button {
-    font-family: 'Pokemon', sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    border: #000 solid 1vh;
-    border-radius: 10px;
-    background-image: linear-gradient(#906303, #fcbc32,
-            #906303);
-    padding: 2vh 3vh;
-    margin: 2vh;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #ff6347;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px;
+    padding: 15px 15px;
+    font-family: 'PokemonFontSolid', Arial, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 2px rgba(70, 0, 0, 0.155);
 }
 .signup__form button:hover {
     cursor: pointer;
     color: #fff;
-    background-image: linear-gradient(#8b1e27, #ff3444,
-            #8b1e27);
+    background-image:linear-gradient(#ff8d79, #ff6347,
+    #cf3642);
 }
