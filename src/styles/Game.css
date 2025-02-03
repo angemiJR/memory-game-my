@@ -29,6 +29,7 @@ h2 {
 .header {
     width: 85%;
     height: 10%;
+    max-width: 1739px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -36,7 +37,7 @@ h2 {
 
 .cards {
     width: 80%;
-    max-width: 80%;
+    max-width: 1596px;
     height: 80%;
     max-height: 80%;
     padding: 20px;
