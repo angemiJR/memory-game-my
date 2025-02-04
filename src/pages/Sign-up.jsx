@@ -38,10 +38,11 @@ function SignUp() {
         <div className="signup__body">
             <div className='text'>
                 <div className="container">
-                    <img className='corgi' src={Corgi} alt="Corgi" />
+                    <img className='corgi_R' src={Corgi} alt="Corgi" />
                     <div className="cloud_container">
+                    <h2>Let's Sign Up!</h2>
                         <img className='cloud' src={Cloud} alt="Cloud" />
-                        <h2>Let's Sign Up!</h2>
+                       
                     </div>
                 </div>
                 <form>

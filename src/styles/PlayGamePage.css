@@ -13,7 +13,7 @@
     font-family: 'PokemonFontSolid', sans-serif; 
 
     .box {
-        height: 55vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -24,8 +24,8 @@
 
 
 .pokemon-theme {
-    width: 100%;
-    height: 50%;
+    width: 90%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,6 +36,7 @@
     border-radius: 15px;
     box-sizing: border-box;  
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
 }
 
 h1 {
@@ -43,17 +44,18 @@ h1 {
     font-weight: bold; 
     font-size: 5em;
     color: #ffffff; 
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     -webkit-text-stroke: 1px rgb(211, 207, 207);
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    padding-top: 40px;
 }
 
 
 
 
 .start-button {
-    margin-top: 15px;
+    /* margin-top: 15px; */
     text-align: center;
     background-color: #ff6347;
     border: none;
@@ -66,7 +68,6 @@ h1 {
     padding: 15px 15px;
     font-family: 'PokemonFontSolid', Arial, sans-serif;
     font-size: 3em;
-    text-align: center;
     cursor: pointer;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -82,16 +83,16 @@ h1 {
 }
 
 .corgi {
-    width: 30vw;
+    width: 20vw;
     height: auto;
-    margin-bottom: -8vw;
+    margin-bottom: -7vw;
     rotate: 10deg;
     z-index: 2;
 };
 
 
 
-@media (min-width: 768px) and (max-width: 979px) {
+/* @media (min-width: 768px) and (max-width: 979px) {
   .pokemon-theme {
     padding: 20px;  
     margin-top: 10px; 
@@ -147,4 +148,4 @@ h1 {
         padding: 5px 10px; 
         font-size: 0.9rem; 
     }
-}
+} */

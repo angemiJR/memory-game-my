@@ -18,53 +18,57 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    .container {
-        height: 30vh;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        margin-bottom: 4vw;
-
-        .corgi {
-            width: 25vw;
-            height: auto;
-            rotate: -5deg;
-            z-index: 1;
-            align-self: self-start;
-        }
-
-        .cloud_container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            position: relative;
-            margin-top: 20px;
-
-            h2 {
-                font-family: 'PokemonFontSolid', Arial, sans-serif;
-                font-size: 3em;
-                color: #ff6347;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-                -webkit-text-stroke: 2px rgba(70, 0, 0, 0.155);
-                align-self: flex-end;
-                z-index: 2;
-                position: absolute;
-                margin-top: 60px;
-                align-self: flex-start;
-                margin-left: 20px;
-            }
-
-            .cloud {
-                width: 20vw;
-                height: auto;
-                z-index: 1;
-                align-self: self-end;
-    
-            }
-        }
-    }
 }
+
+.container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Aligns items in the center */
+   
+    position: relative;
+}
+
+.corgi_L {
+    width: 25vw;
+    height: auto;
+    rotate: -5deg;
+    z-index: 1;
+    align-self: flex-start; /* Fix invalid value */
+    
+}
+
+.cloud_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.cloud_container .cloud {
+    width: 25vw;
+    height: auto;
+    position: relative;
+}
+
+.cloud_container h2 {
+    font-family: 'PokemonFontSolid', Arial, sans-serif;
+    font-size: 3em; /* Fix invalid decimal separator */
+    color: #ff6347;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 2px rgba(70, 0, 0, 0.155);
+    margin-left: 10px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
+}
+
 
 .login__form {
     display: flex;
