@@ -36,12 +36,12 @@ function SignUp() {
 
     return (
         <div className="signup__body">
-            <div className='text'>
-                <div className="container">
+            <div className='text_R'>
+                <div className="container_R">
                     <img className='corgi_R' src={Corgi} alt="Corgi" />
-                    <div className="cloud_container">
+                    <div className="cloud_container_R">
                     <h2>Let's Sign Up!</h2>
-                        <img className='cloud' src={Cloud} alt="Cloud" />
+                        <img className='cloud_R' src={Cloud} alt="Cloud" />
                        
                     </div>
                 </div>

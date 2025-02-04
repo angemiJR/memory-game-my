@@ -11,7 +11,7 @@
     margin: 0;
 }
 
-.text {
+.text_R {
     height: 55vh;
     display: flex;
     flex-direction: column;
@@ -19,40 +19,46 @@
     align-items: center;
 }
 
-.container {
+.container_R {
     height: 30vh;
+    width: 45vw;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     position: relative;
 }
 
 .corgi_R {
-    width: 25vw;
+    width: 20vw;
     height: auto;
     rotate: 5deg;
     z-index: 1;
-    align-self: flex-start;
-    margin-top: -2vw;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-100%, -50%);
 }
 
-.cloud_container {
+.cloud_container_R {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 20px;
+    bottom: 30%;
+    right: 15%;
+  
+    /* margin-top: 20px; */
 }
 
-.cloud_container .cloud {
-    width: 25vw;
+.cloud_container_R .cloud_R {
+    width: 20vw;
     height: auto;
     position: relative;
 }
 
-.cloud_container h2 {
+.cloud_container_R h2 {
     font-family: 'PokemonFontSolid', Arial, sans-serif;
-    font-size: 3em;
+    font-size: 2vw;
     color: #ff6347;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     -webkit-text-stroke: 2px rgba(70, 0, 0, 0.155);
@@ -76,6 +82,7 @@
     background-image: radial-gradient(#ffffff, #d0d0d0);
     border-radius: 2%;
     box-shadow: 8px 8px 6px #cacaca;
+    position: relative;
 }
 
 .signup__form > div {
@@ -88,22 +95,22 @@
 
 .signup__form label {
     font-family: 'PokemonFontSolid', Arial, sans-serif;
-    font-size: 2em;
+    font-size: 2vw;
     text-align: center;
     cursor: pointer;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     -webkit-text-stroke: 2px rgba(70, 0, 0, 0.155);
-    margin-bottom: -15px;
+    margin-top: 2vw;
 }
 
 .signup__form input {
-    width: 42vh;
+    /* width: 42vh; */
     height: 6vh;
     border: none;
     border-radius: 20px;
     font-family: 'PokemonFontSolid', Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2vw;
     text-align: center;
     color: #ff6347;
 }
@@ -113,7 +120,7 @@
 }
 
 .signup__form button {
-    margin-top: 15px;
+    margin-top: 1vw;
     text-align: center;
     background-color: #ff6347;
     border: none;
@@ -123,9 +130,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px 5px;
-    padding: 15px 15px;
+    padding: 1vw;
     font-family: 'PokemonFontSolid', Arial, sans-serif;
-    font-size: 3em;
+    font-size: 3vw;
     text-align: center;
     cursor: pointer;
     color: #ffffff;

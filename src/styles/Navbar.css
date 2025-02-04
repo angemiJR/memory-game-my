@@ -15,11 +15,11 @@ nav {
 }
 
 ul {
+    width: 50vw;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    gap: 40px;
-    padding: 5px;
+    padding: 1vw;
     color: white;
       
 }
@@ -28,7 +28,7 @@ ul {
     text-decoration: none; 
     color: #ffffff; 
     font-weight: bold; 
-    font-size: 3em;
+    font-size: 3vw;
     display: inline-block; /* makes transforms possible*/
     transition: transform 0.2s ease, color 0.2s ease; 
   }
@@ -48,71 +48,3 @@ ul {
     color: #ffffff; 
   }
   
-
-
-
-@media (min-width: 1024px) {
-    nav {
-        height: 10vh;  
-    }
-
-    ul {
-        gap: 50px;  
-    }
-
-    a {
-        font-size: 1.5rem;  
-        padding: 10px 15px; 
-    }
-}
-
-
-@media (max-width: 768px) {
-    nav {
-        height: 25vh;  /* Make navbar taller for easier navigation */
-    }
-
-    ul {
-        flex-direction: column;  /* Stack items vertically */
-        align-items: center;  /* Center items horizontally */
-        gap: 15px;  
-    }
-
-    a {
-        font-size: 1.1rem;  
-    }
-
-
-}
-
-
-@media (max-width: 480px) {
-    nav {
-        height: 25vh;  
-    }
-
-    ul {
-        gap: 10px;  
-    }
-
-    a {
-        font-size: 1rem; 
-    }
-}
-
-
-@media (max-width: 320px) {
-    nav {
-        width: 320px;
-        height: 25vh;  
-    }
-
-    ul {
-        gap: 8px;  
-        padding: 0;  
-    }
-
-    a {
-        font-size: 0.9rem;  
-    }
-}

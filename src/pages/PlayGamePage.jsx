@@ -15,7 +15,7 @@ const PlayGamePage = () => {
     return (
       <div className="play-game-page">
         <div className="box">
-        <div className='corgi'>
+        <div className='corgi_G'>
           <img src={Corgi} alt="" />
         </div>
         <div className="pokemon-theme">

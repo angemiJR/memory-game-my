@@ -4,7 +4,7 @@
     height: 90vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-image: url('../assets/paws.jpg');
     background-size: cover;
     background-position: center center; 
@@ -13,42 +13,43 @@
     font-family: 'PokemonFontSolid', sans-serif; 
 
     .box {
-        height: 70vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        margin-top: -100px;
+        margin-top: 2vw;
     };
 }
 
 
 .pokemon-theme {
-    width: 90%;
-    height: 60%;
+    width: 80vw;
+    /* height: 60%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #f7c8c8;
-    padding: 30px;
+    padding: 1vw;
     border-radius: 15px;
     box-sizing: border-box;  
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     position: relative;
+    /* margin-bottom: 3vw; */
 }
 
 h1 {
     font-family: 'PokemonFontSolid', Arial, sans-serif;
     font-weight: bold; 
-    font-size: 5em;
+    font-size: 4vw;
     color: #ffffff; 
     /* margin-bottom: 20px; */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     -webkit-text-stroke: 1px rgb(211, 207, 207);
     /* margin-top: 40px; */
-    padding-top: 40px;
+    padding-top: 3vw;
 }
 
 
@@ -65,9 +66,10 @@ h1 {
     justify-content: center;
     align-items: center;
     border-radius: 5px 5px;
-    padding: 15px 15px;
+    padding: 1vw;
+    margin-top: 2vw;
     font-family: 'PokemonFontSolid', Arial, sans-serif;
-    font-size: 3em;
+    font-size: 3vw;
     cursor: pointer;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -82,12 +84,17 @@ h1 {
     transform: translateY(4px);
 }
 
-.corgi {
+.corgi_G {
     width: 20vw;
     height: auto;
     margin-bottom: -7vw;
+    margin-left: 50vw;
     rotate: 10deg;
     z-index: 2;
+    /* position: absolute;
+    top: 47%;
+    left: 80%;
+    transform: translate(-100%, -50%); */
 };
 
 
