@@ -6,6 +6,8 @@
     height: 95%;
     cursor: pointer;
     place-self: center;
+    width: calc(9vw - 20px);
+  height: calc(22vh + 10px);
   
 }
 
