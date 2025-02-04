@@ -7,3 +7,20 @@ body {
     overflow-x: hidden; 
 }
 
+.landscape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ff6347;
+}
+
+.landscape h2 {
+    font-family: 'PokemonFontSolid', Arial, sans-serif;
+    font-weight: bold; 
+    font-size: 4vw;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 1px rgb(211, 207, 207);
+    padding-top: 3vw;
+}
