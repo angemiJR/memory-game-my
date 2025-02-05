@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import '../styles/reset.css';
 import "../styles/Game.css";
+import React, { useState, useEffect } from "react";
 import Cards from "../components/Cards.jsx";
 import Score from "../components/Score.jsx";
 import GameOver from "../components/GameOver.jsx";
